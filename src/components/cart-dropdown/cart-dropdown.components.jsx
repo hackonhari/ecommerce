@@ -13,7 +13,6 @@ const CartDropdown=({cartItems,history,dispatch})=>(
        <div className="cart-items">
             { cartItems.length?
                 cartItems.map(cartItem=>{
-                    console.log(cartItem)
                     return(
                     <CartItem key={cartItem.id} cartItem={cartItem} />
                 )}):(<span className="empty-message">Your Cart is empty</span>)
